@@ -1,19 +1,21 @@
 import "./css/HomePage.css";
-import "./components/countDown"
+
 import flowerImageLeft from "./assets/leftFlower.png";
 import flowerImageRight from "./assets/rightFlower.png";
-
+import CountDown from "./components/CountDown";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div >
-          {/* <img src={flowerImageLeft} class="top-left-decoration" /> */}
-          <img src={flowerImageRight} class="top-right-decoration"/>
+        <div>
+          <img src={flowerImageLeft} class="top-left-decoration" />
+          <img src={flowerImageRight} class="top-right-decoration" />
         </div>
-        <countDown/>
       </header>
+      <div>
+        <CountDown />
+      </div>
     </div>
   );
 }

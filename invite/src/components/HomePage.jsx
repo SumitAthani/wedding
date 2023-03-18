@@ -11,13 +11,13 @@ export default function HomePage() {
             alignItems: "center",
             backgroundPosition: 'center',
             backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             height: "100vh",
             width: "100vw",
             backgroundSize: "cover",
             postion: "relative",
             opacity: 0.5,
+            overflow: "hidden"
 
             //   alpha: 0.7,
 

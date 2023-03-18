@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import backgroundImage from "../assets/background.JPG";
 const CountDown = () => {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -33,7 +33,12 @@ const CountDown = () => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      backgroundImage: "",
       // backgroundColor: "black",
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "contain",
+      backgroundRepeat: "no-repeat",
+      height: 1000,
     },
     box: {
       justifyContent: "center",

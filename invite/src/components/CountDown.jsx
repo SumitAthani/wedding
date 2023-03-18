@@ -33,7 +33,6 @@ const CountDown = () => {
   const styles = {
     countDown: {
       display: "flex",
-      position: "absolute",
       justifyContent: "center",
       alignItems: "center",
       backgroundImage: `url(${backgroundImage})`,

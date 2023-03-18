@@ -1,16 +1,13 @@
-import React, { Component, useEffect, useState } from "react";
-import muisc from "../assets/music/song.mp3";
+import React, { useState } from "react";
+import music from "../assets/music/song.mp3";
 
 function Music() {
-  const [song, setSong] = useState();
+  const [song, setSong] = useState(new Audio(music));
 
   window.addEventListener("click", () => {
     setSong(song);
     song.play();
   });
-  useEffect(() => {
-    setSong(new Audio(muisc));
-  }, []);
 
   return <div>Music</div>;
 }

@@ -1,38 +1,31 @@
-import React, {useState, useEffect} from "react";
-
-
+import React, { useState, useEffect } from "react";
 
 const CountDown = () => {
-
-  const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
-  const [seconds, setSeconds] = useState(0)
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log('This will run every second!');
-      handelTimeLeft()
+      console.log("This will run every second!");
+      handelTimeLeft();
     }, 1000);
     return () => clearInterval(interval);
   }, [seconds]);
 
-  function handelTimeLeft(){
-
+  function handelTimeLeft() {
     var countDownDate = new Date("April 23, 2023 00:00:00").getTime();
-    console.log("In handel time")
+    console.log("In handel time");
     var now = new Date().getTime();
 
     var distance = countDownDate - now;
 
-    setDays(Math.floor(distance / (1000 * 60 * 60 * 24)))
-    setHours(Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    ))
-    setMinutes( Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)))
-    setSeconds(Math.floor((distance % (1000 * 60)) / 1000))
-    console.log(days,hours,minutes,seconds)
-
+    setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
+    setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+    setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+    setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
+    console.log(days, hours, minutes, seconds);
   }
 
   const styles = {
@@ -42,21 +35,36 @@ const CountDown = () => {
       alignItems: "center",
       // backgroundColor: "black",
     },
+    box: {
+      justifyContent: "center",
+      alignItems: "center",
+      innerHeight: 200,
+      backgroundColor: "purple",
+      padding: "1%",
+      margin: ".05%",
+      borderRadius: "10%",
+      fontSize: 24,
+      color: "white",
+    },
   };
-    // If the count down is over, write some text
-    // if (distance < 0) {
-    //   // clearInterval(x);
-    //   document.getElementById("time").innerHTML =
-    //     "Bless the married couple for happy life!";
-    // }
- 
+  // If the count down is over, write some text
+  // if (distance < 0) {
+  //   // clearInterval(x);
+  //   document.getElementById("time").innerHTML =
+  //     "Bless the married couple for happy life!";
+  // }
 
-  return <div style={styles.countDown}>countDown</div>;
-}
+  return (
+    <div style={styles.countDown}>
+      <div style={styles.box}>{days}</div>
+      <div style={styles.box}>{hours}</div>
+      <div style={styles.box}>{minutes}</div>
+      <div style={styles.box}>{seconds}</div>
+    </div>
+  );
+};
 
-export default CountDown
-
-
+export default CountDown;
 
 // var styles = [
 //   "background: linear-gradient(#D33106, #571402)",

@@ -3,6 +3,7 @@ import "./css/HomePage.css";
 import flowerImageLeft from "./assets/leftFlower.png";
 import flowerImageRight from "./assets/rightFlower.png";
 import CountDown from "./components/CountDown";
+import PetalFalling from "./components/PetalFalling";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </header>
       <div>
         <CountDown />
+        <PetalFalling />
       </div>
     </div>
   );

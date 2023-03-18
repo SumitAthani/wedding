@@ -7,6 +7,7 @@ function PetalFalling() {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      positon: "absolute"
       // backgroundColor: "black",
     },
   };

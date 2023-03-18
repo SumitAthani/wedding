@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import backgroundImage from "../assets/background.JPG";
+import { Snow } from "react-snow-particle";
+
 const CountDown = () => {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -31,10 +33,9 @@ const CountDown = () => {
   const styles = {
     countDown: {
       display: "flex",
+      position: "absolute",
       justifyContent: "center",
       alignItems: "center",
-      backgroundImage: "",
-      // backgroundColor: "black",
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
@@ -62,6 +63,7 @@ const CountDown = () => {
 
   return (
     <div style={styles.countDown}>
+      <Snow color="#000000" particles="100" />
       <div style={styles.box}>{days}</div>
       <div style={styles.box}>{hours}</div>
       <div style={styles.box}>{minutes}</div>

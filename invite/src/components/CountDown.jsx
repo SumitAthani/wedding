@@ -38,7 +38,8 @@ const CountDown = () => {
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
-      height: 1000,
+      height: "100vh",
+      width: "100vw",
     },
     box: {
       justifyContent: "center",

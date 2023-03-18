@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <img src={flowerImageLeft} class="top-left-decoration" />
-          <img src={flowerImageRight} class="top-right-decoration" />
+          <img src={flowerImageLeft} className="top-left-decoration" />
+          <img src={flowerImageRight} className="top-right-decoration" />
         </div>
       </header>
       <div>

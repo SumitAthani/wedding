@@ -15,8 +15,9 @@ function App() {
         </div>
       </header>
       <div>
-        <CountDown />
         <PetalFalling />
+        <CountDown />
+
       </div>
     </div>
   );

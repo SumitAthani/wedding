@@ -3,20 +3,25 @@ import backgroundImage from "../assets/background.JPG";
 
 
 export default function HomePage() {
+
+    const styles = {
+        backgroungImage: {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundPosition: 'center',
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          height: "100vh",
+          width: "100vw",
+          backgroundSize: "cover",
+          postion: "relative",
+        },
+    }
   return (
-    <div>HomePage</div>
+    <div  style={styles.backgroungImage}>HomePage</div>
   )
 
-  const styles = {
-    countDown: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: "contain",
-      backgroundRepeat: "no-repeat",
-      height: "100vh",
-      width: "100vw",
-    },
-}
+
 }

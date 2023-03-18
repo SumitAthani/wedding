@@ -5,6 +5,7 @@ import flowerImageRight from "./assets/rightFlower.png";
 import CountDown from "./components/CountDown";
 import PetalFalling from "./components/PetalFalling";
 import Music from "./components/Music";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
         </div>
       </header>
       <div>
-      {/* <PetalFalling /> */}
+        <HomePage/>
+      {/* <PetalFalling />
         <CountDown />
-        <Music />
+        <Music /> */}
       </div>
     </div>
   );

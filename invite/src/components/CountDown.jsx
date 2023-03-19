@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import backgroundImage from "../assets/background.JPG";
-import { Snow } from "react-snow-particle";
 
 const CountDown = () => {
   const [days, setDays] = useState(0);
@@ -33,15 +31,16 @@ const CountDown = () => {
   const styles = {
     countDown: {
       display: "flex",
+      flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: "contain",
-      backgroundRepeat: "no-repeat",
-      height: "100vh",
-      width: "100vw",
+      height: "10vh",
+      width: "auto",
+      // backgroundColor:"red"
+      // position: "relative"
     },
     box: {
+      display: "flex",
       justifyContent: "center",
       alignItems: "center",
       innerHeight: 200,
@@ -51,6 +50,7 @@ const CountDown = () => {
       borderRadius: "10%",
       fontSize: 24,
       color: "white",
+      // position: "relative",
     },
   };
   // If the count down is over, write some text
@@ -62,7 +62,7 @@ const CountDown = () => {
 
   return (
     <div style={styles.countDown}>
-      <Snow color="#000000" particles="100" />
+
       <div style={styles.box}>{days}</div>
       <div style={styles.box}>{hours}</div>
       <div style={styles.box}>{minutes}</div>

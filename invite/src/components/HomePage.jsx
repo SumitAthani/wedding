@@ -12,7 +12,7 @@ export default function HomePage() {
             backgroundPosition: 'center',
             backgroundImage: `url(${backgroundImage})`,
             backgroundRepeat: "no-repeat",
-            height: "100vh",
+            height: "62vh",
             width: "100vw",
             backgroundSize: "cover",
             postion: "relative",
@@ -34,9 +34,7 @@ export default function HomePage() {
         <>
 
             <div style={styles.backgroundColor}>
-
                 <div style={styles.backgroungImage}>
-                    <Snow color="#000000" particles="100" />
                 </div>
             </div>
         </>

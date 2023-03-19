@@ -1,26 +1,34 @@
 import "./css/HomePage.css";
 
-import flowerImageLeft from "./assets/leftFlower.png";
-import flowerImageRight from "./assets/rightFlower.png";
-import CountDown from "./components/CountDown";
-import PetalFalling from "./components/PetalFalling";
-import Music from "./components/Music";
 import HomePage from "./components/HomePage";
+import LandingPage from "./components/LandingPage";
+import Music from "./components/Music"
+
 
 function App() {
+  const styles = {
+    LandingWrapper: {
+      display: "flex",
+      justifyContent: "top",
+      alignItems: "top",
+      overflow: "hidden",
+    },
+
+    homePageWrapper: {
+      display: "flex",
+      position: "relative",
+      backgroundColor: "green",
+      // height: "62vh",
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          <img src={flowerImageLeft} className="top-left-decoration" />
-          <img src={flowerImageRight} className="top-right-decoration" />
-        </div>
-      </header>
-      <div>
-        <HomePage/>
-      {/* <PetalFalling />
-        <CountDown />
-        <Music /> */}
+      {/* <Music/> */}
+      <div style={styles.LandingWrapper}>
+        <LandingPage />
+      </div>
+      <div style={styles.homePageWrapper}>
+        <HomePage />
       </div>
     </div>
   );

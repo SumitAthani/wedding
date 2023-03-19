@@ -24,7 +24,10 @@ function App() {
       <div>
         <PhotoGallery />
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
+
     </div>
   );
 }

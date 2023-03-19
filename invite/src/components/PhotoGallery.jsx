@@ -8,43 +8,55 @@ import image5 from "../assets/collagePhotoes/IMG5.jpg";
 import image6 from "../assets/collagePhotoes/IMG6.jpg";
 
 const photos = [
-    {
-        src: image1,
-        width: 900,
-        height: 600,
-    },
-    {
-        src: image2,
-        width: 600,
-        height: 900,
-    },
-    {
-        src: image3,
-        width: 900,
-        height: 600,
-    },
-    {
-        src: image4,
-        width: 600,
-        height: 900,
-    },
-    {
-        src: image5,
-        width: 800,
-        height: 600,
-    },
-    {
-        src: image6,
-        width: 900,
-        height: 1200,   
-    }
-    
+  {
+    src: image1,
+    width: 900,
+    height: 600,
+  },
+  {
+    src: image6,
+    width: 900,
+    height: 1200,
+  },
+  {
+    src: image2,
+    width: 600,
+    height: 900,
+  },
+  {
+    src: image3,
+    width: 900,
+    height: 600,
+  },
+  {
+    src: image5,
+    width: 800,
+    height: 600,
+  },
+  {
+    src: image4,
+    width: 600,
+    height: 900,
+  },
 
-    // { src: "/images/image2.jpg", width: 1600, height: 900 },
+  // { src: "/images/image2.jpg", width: 1600, height: 900 },
 ];
 
 export default function PhotoGallery() {
-    return <PhotoAlbum layout="rows" photos={photos} key="sumit" />;
+  return (
+    <>
+      <div className="text">
+        <h3>Gallery</h3>
+        <div>Clicks that will make you smile</div>
+      </div>
+      <PhotoAlbum
+        layout="rows"
+        photos={photos}
+        key="sumit"
+        rowConstraints={{ maxPhotos: 2 }}
+      />
+    </>
+  );
 }
 
 // "../assets/background.jpg"

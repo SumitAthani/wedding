@@ -5,6 +5,8 @@
 }
 
 .text {
+  font-family: "Dancing Script";
+  font-size: x-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +28,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7%;
     background-color: #674ea7;
     color: whitesmoke;
   }

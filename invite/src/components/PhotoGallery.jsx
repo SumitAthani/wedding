@@ -7,37 +7,43 @@ import image5 from "../assets/IMG5.jpg";
 import image6 from "../assets/IMG6.jpg";
 
 const photos = [
-  {
-    src: image1,
-    width: 800,
-    height: 600,
-  },
-  {
-    src: image2,
-    width: 800,
-    height: 600,
-  },
-  {
-    src: image3,
-    width: 800,
-    height: 600,
-  },
-  {
-    src: image4,
-    width: 800,
-    height: 600,
-  },
-  {
-    src: image5,
-    width: 800,
-    height: 600,
-  },
+    {
+        src: image1,
+        width: 900,
+        height: 600,
+    },
+    {
+        src: image2,
+        width: 600,
+        height: 900,
+    },
+    {
+        src: image3,
+        width: 900,
+        height: 600,
+    },
+    {
+        src: image4,
+        width: 600,
+        height: 900,
+    },
+    {
+        src: image5,
+        width: 800,
+        height: 600,
+    },
+    {
+        src: image6,
+        width: 900,
+        height: 1200,   
+    }
+    
 
-  // { src: "/images/image2.jpg", width: 1600, height: 900 },
+    // { src: "/images/image2.jpg", width: 1600, height: 900 },
 ];
 
 export default function PhotoGallery() {
-  return <PhotoAlbum layout="columns" photos={photos} key="sumit" />;
+    return <PhotoAlbum layout="rows" photos={photos} key="sumit" />;
 }
 
 // "../assets/background.jpg"

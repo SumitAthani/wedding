@@ -1,9 +1,9 @@
-import "./css/App.css"
+import "./css/App.css";
 
 import HomePage from "./components/HomePage";
 import LandingPage from "./components/LandingPage";
-import Music from "./components/Music"
-
+import Music from "./components/Music";
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -12,9 +12,14 @@ function App() {
       <div className="landingWrapper">
         <LandingPage />
       </div>
-      <div className='homePageWrapper'>
+      <div className="homePageWrapper">
         <HomePage />
+        <Music />
       </div>
+      <div>
+        <Map />
+      </div>
+      {/* <div style={{ height: "100vh" }}></div> */}
     </div>
   );
 }

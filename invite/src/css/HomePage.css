@@ -1,23 +1,65 @@
 .backgroundColor {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100vw;
-	background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+@media screen and (max-width: 640px) {
+  .backgroungImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.5;
+    overflow: hidden;
+  }
 }
 
 .backgroungImage {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-position: center;
-	background-image: url("../assets/background.JPG");
-	background-repeat: no-repeat;
-	height: 100vh;
-	width: 100vw;
-	background-size: cover;
-	position: absolute;
-	opacity: 0.5;
-	overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.homepageText {
+  position: relative;
+  color: white;
+  z-index: 2;
+  opacity: 1;
+}
+
+.homepageText h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 60px;
+  /* margin: 32px 0; */
+  color: whitesmoke;
+}
+
+.homepageText h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: xx-large;
+  /* margin: 32px 0; */
+  color: whitesmoke;
 }

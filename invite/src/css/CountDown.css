@@ -1,38 +1,54 @@
 .countDownContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: auto;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: auto;
 }
 
 .counterBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200;
-    background-color: purple;
-    padding: 1%;
-    margin: 0.05%;
-    border-radius: 10%;
-    font-size: 24;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200;
+  background-color: purple;
+  padding: 15%;
+  margin: 1%;
+  border-radius: 10%;
+  font-size: 48;
+  color: white;
 }
 
 .days {
-    background: linear-gradient(90deg, #b33a46, #9b313c);
+  background: linear-gradient(90deg, #b33a46, #9b313c);
 }
 
 .hours {
-    background: linear-gradient(90deg, #a7c3cd, #90a9b2);
+  background: linear-gradient(90deg, #a7c3cd, #90a9b2);
 }
 
 .minutes {
-    background-color: #874562;
+  background-color: #874562;
 }
 
 .seconds {
-    background-color: #145689;
+  background-color: #145689;
+}
+
+@media screen and (max-width: 640px) {
+  .counterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200;
+    /* background-color: purple; */
+    padding: 5%;
+    margin: 1%;
+    border-radius: 10%;
+    font-size: 3dvb;
+    color: white;
+  }
 }

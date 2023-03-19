@@ -8,8 +8,6 @@ function Music() {
     setSong(song);
     song.play();
   });
-
-  return <div>Music</div>;
 }
 
 export default Music;

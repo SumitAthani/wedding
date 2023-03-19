@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../css/CountDown.css"
+import "../css/CountDown.css";
+import CounterBox from "./CounterBox";
 
 const CountDown = () => {
   const [days, setDays] = useState(0);
@@ -38,12 +39,10 @@ const CountDown = () => {
 
   return (
     <div className="countDownContainer">
-
-      <div className="counterBox">{days}</div>
-      <div className="counterBox">{hours}</div>
-      <div className="counterBox">{minutes}</div>
-      <div className="counterBox">{seconds}</div>
-      
+      <CounterBox name="Days" value={days} />
+      <CounterBox name="Hours" value={hours} />
+      <CounterBox name="Mins" value={minutes} />
+      <CounterBox name="Secs" value={seconds} />
     </div>
   );
 };

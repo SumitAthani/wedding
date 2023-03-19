@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import lottie from "lottie-web";
+import cat from "../assets/animation/catMeow.json";
 
-const Footer = () => (
-  <div className="footer">
-    <p>This is some content in sticky footer</p>
-  </div>
-);
+export default function Footer() {
+    useEffect(() => {
+        const instance = lottie.loadAnimation({
+            container: document.querySelector("#cat-animation"),
+            animationData: cat,
+            loop: true, // boolean
+            autoplay: true, // boolean
+        });
+        return () => instance.destroy();
+    }, [])
 
-export default Footer;
+    return (
+        <>
+            <div className="footer">
+                {/* <p>This is some content in sticky footer</p> */}
+                <div id="cat-animation" style={{ width: 50, height: 50 }} />
+            </div>
+        </>
+    )
+}
+

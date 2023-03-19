@@ -1,10 +1,11 @@
 import PhotoAlbum from "react-photo-album";
-import image1 from "../assets/IMG1.jpg";
-import image2 from "../assets/IMG2.jpg";
-import image3 from "../assets/IMG3.jpg";
-import image4 from "../assets/IMG4.jpg";
-import image5 from "../assets/IMG5.jpg";
-import image6 from "../assets/IMG6.jpg";
+
+import image1 from "../assets/collagePhotoes/IMG1.jpg";
+import image2 from "../assets/collagePhotoes/IMG2.jpg";
+import image3 from "../assets/collagePhotoes/IMG3.jpg";
+import image4 from "../assets/collagePhotoes/IMG4.jpg";
+import image5 from "../assets/collagePhotoes/IMG5.jpg";
+import image6 from "../assets/collagePhotoes/IMG6.jpg";
 
 const photos = [
     {

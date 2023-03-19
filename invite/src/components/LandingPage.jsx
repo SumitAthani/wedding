@@ -9,19 +9,19 @@ export default function LandingPage() {
     return (
         <>
             <div className='landingPageWrapper'>
-            <Snow color="#000000" particles="100" />
+                <Snow color="#000000" particles="100" />
                 <div className="flowerWrapper">
                     <img src={flowerImageLeft} className="top-left-decoration" />
                     <img src={flowerImageRight} className="top-right-decoration" />
                 </div>
                 <div className="wrap">
-                    <div class="title">
+                    <div className="title">
                         <h1>Sushma </h1>
                         <h2>&</h2>
                         <h1>Ganesh</h1>
                         <h3>Are getting married</h3>
                         <p>
-                            on <span class="date">23 April 2023</span>, At <span class="place">Ashirwad Garden</span> Ratu, Ranchi
+                            on <span className="date">23 April 2023</span>, At <span className="place">Ashirwad Garden</span> Ratu, Ranchi
                         </p>
                     </div>
                 </div>

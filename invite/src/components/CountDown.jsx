@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../css/CountDown.css"
 
 const CountDown = () => {
   const [days, setDays] = useState(0);
@@ -8,7 +9,7 @@ const CountDown = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("This will run every second!");
+      // console.log("This will run every second!");
       handelTimeLeft();
     }, 1000);
     return () => clearInterval(interval);
@@ -16,7 +17,7 @@ const CountDown = () => {
 
   function handelTimeLeft() {
     var countDownDate = new Date("April 23, 2023 00:00:00").getTime();
-    console.log("In handel time");
+    // console.log("In handel time");
     var now = new Date().getTime();
 
     var distance = countDownDate - now;
@@ -25,34 +26,9 @@ const CountDown = () => {
     setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
     setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
     setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
-    console.log(days, hours, minutes, seconds);
+    // console.log(days, hours, minutes, seconds);
   }
 
-  const styles = {
-    countDown: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "10vh",
-      width: "auto",
-      // backgroundColor:"red"
-      // position: "relative"
-    },
-    box: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      innerHeight: 200,
-      backgroundColor: "purple",
-      padding: "1%",
-      margin: ".05%",
-      borderRadius: "10%",
-      fontSize: 24,
-      color: "white",
-      // position: "relative",
-    },
-  };
   // If the count down is over, write some text
   // if (distance < 0) {
   //   // clearInterval(x);
@@ -61,12 +37,13 @@ const CountDown = () => {
   // }
 
   return (
-    <div style={styles.countDown}>
+    <div className="countDownContainer">
 
-      <div style={styles.box}>{days}</div>
-      <div style={styles.box}>{hours}</div>
-      <div style={styles.box}>{minutes}</div>
-      <div style={styles.box}>{seconds}</div>
+      <div className="counterBox">{days}</div>
+      <div className="counterBox">{hours}</div>
+      <div className="counterBox">{minutes}</div>
+      <div className="counterBox">{seconds}</div>
+      
     </div>
   );
 };

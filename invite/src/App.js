@@ -1,4 +1,4 @@
-import "./css/HomePage.css";
+import "./css/App.css"
 
 import HomePage from "./components/HomePage";
 import LandingPage from "./components/LandingPage";
@@ -6,28 +6,13 @@ import Music from "./components/Music"
 
 
 function App() {
-  const styles = {
-    LandingWrapper: {
-      display: "flex",
-      justifyContent: "top",
-      alignItems: "top",
-      overflow: "hidden",
-    },
-
-    homePageWrapper: {
-      display: "flex",
-      position: "relative",
-      backgroundColor: "green",
-      // height: "62vh",
-    }
-  }
   return (
     <div className="App">
       {/* <Music/> */}
-      <div style={styles.LandingWrapper}>
+      <div className="landingWrapper">
         <LandingPage />
       </div>
-      <div style={styles.homePageWrapper}>
+      <div className='homePageWrapper'>
         <HomePage />
       </div>
     </div>

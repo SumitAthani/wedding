@@ -1,14 +1,23 @@
-.top-left-decoration {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	/* background-color: white; */
+.backgroundColor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
 }
-.top-right-decoration {
+
+.backgroungImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-image: url("../assets/background.JPG");
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
 	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	/* background-color: white; */
+	opacity: 0.5;
+	overflow: hidden;
 }

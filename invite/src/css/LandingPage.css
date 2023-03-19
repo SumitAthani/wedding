@@ -87,8 +87,16 @@
     line-height: 1;
 }
 
-.countDownWrapper {
+.date {
+	color: #874562;
+	font-weight: 900;
+}
 
+.place {
+	color: #874562;
+	font-weight: 900;
+}
+.countDownWrapper {
     display: flex;
     padding: 5px;
     margin-top: 70vh;

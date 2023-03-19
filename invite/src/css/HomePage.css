@@ -31,9 +31,9 @@
 }
 
 .homepageText {
-  position: relative;
+  position: absolute;
   color: white;
-  z-index: 2;
+  z-index: auto;
   opacity: 1;
 }
 

@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage";
 import Music from "./components/Music";
 import Map from "./components/Map";
 import PhotoGallery from "./components/PhotoGallery";
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <div>
         <PhotoGallery />
       </div>
-      {/* <div style={{ height: "100vh" }}></div> */}
+      <Footer />
     </div>
   );
 }

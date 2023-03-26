@@ -7,7 +7,7 @@
   align-items: center;
   /* background-color: green; */
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
   overflow: hidden;
 }
@@ -98,19 +98,15 @@
   display: flex;
   padding: 5px;
   margin-top: 70vh;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   width: fit-content;
   position: absolute;
 }
 
 @media screen and (max-width: 640px) {
   .title h1 {
-    font-family: "Dancing Script", cursive;
-    font-weight: bold;
-    font-style: normal;
     font-size: 6dvh;
     margin: 0;
-    color: #674ea7;
   }
 
   .title {

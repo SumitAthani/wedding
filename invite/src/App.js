@@ -6,11 +6,11 @@ import Music from "./components/Music";
 import Map from "./components/Map";
 import PhotoGallery from "./components/PhotoGallery";
 import Footer from "./components/Footer";
+import InvitationCard from "./components/InvitationCard"
 
 function App() {
   return (
     <div className="App">
-      {/* <Music/> */}
       <div className="landingWrapper">
         <LandingPage />
       </div>
@@ -18,6 +18,9 @@ function App() {
         <HomePage />
         <Music />
       </div>
+      <div>
+          <InvitationCard/>
+        </div>
       <div>
         <Map />
       </div>

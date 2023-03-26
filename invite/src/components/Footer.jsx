@@ -20,7 +20,7 @@ export default function Footer() {
                 {/* <p>This is some content in sticky footer</p> */}
                 <div id="cat-animation" style={{ width: 100, height: 75, marginTop: -10, marginLeft: -15 }} />
                 <div className="footerText">
-                    <h1>Do Join us and make our day Blissfull !</h1> </div>
+                    <h1>Do Join us and make our day Blissful !</h1> </div>
             </div>
         </>
     );

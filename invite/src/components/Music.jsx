@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import music from "../assets/music/song.mp3";
 
 function Music() {

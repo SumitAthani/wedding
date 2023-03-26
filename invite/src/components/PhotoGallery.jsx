@@ -49,14 +49,16 @@ export default function PhotoGallery() {
         <h3>Gallery</h3>
         <div>Clicks that will make you smile</div>
       </div>
-      <PhotoAlbum
-        layout="rows"
-        photos={photos}
-        key="sumit"
-        rowConstraints={{ maxPhotos: 2 }}
-      />
+      <div className="photoGalleryWrapper">
+        <PhotoAlbum
+          layout="rows"
+          photos={photos}
+          key="sumit"
+          rowConstraints={{ maxPhotos: 2 }}
+        />
+      </div>
     </>
   );
 }
 
-// "../assets/background.jpg"
+

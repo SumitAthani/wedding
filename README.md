@@ -23,7 +23,7 @@ This is a project made for my sister's marriage, A wedding Invitation website.
 
 ## Tech Stack
 
-**Client:** ReactJS
+**Client:** ReactJS, HTML and CSS
 
 
 ## Run Locally

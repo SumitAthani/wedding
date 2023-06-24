@@ -14,6 +14,12 @@ This is a project made for my sister's marriage, A wedding Invitation website.
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+## Features
+
+
+- Embedded google maps
+- Plays music in background
+- Responsive app
 
 ## Authors
 
@@ -51,12 +57,4 @@ Start the server
 ```bash
   npm start
 ```
-
-
-## Features
-
-
-- Embedded google maps
-- Plays music in background
-- Responsive app
 
